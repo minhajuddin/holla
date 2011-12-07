@@ -47,7 +47,7 @@ window.Assets = Spine.Controller.create({
       }
     }).success(function(data){
       message.updateAttributes({
-        body: file.name + ": " + data.url
+        body: file.name + ":<br /><img src='" + data.url + "' />"
       });
     });
   }
